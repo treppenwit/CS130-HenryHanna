@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 # CS130-HenryHanna
+=======
+# The-Pickle-Barrel
+>>>>>>> Stashed changes
 | Name | Value |
 |:---|:---|
 | **Course** | CSCI130 |
@@ -22,3 +26,21 @@
 | Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/Assignment/Hello/hello.cpp |
 | Self Grade | 100/100 |
 | Notes | completed all the requirements and tested program many times; solution accepted by kattis; screenshot found in the same location |
+<<<<<<< Updated upstream
+=======
+
+
+## Lab
+
+### Lab #1
+
+| Name | Henry Hanna |
+| :--- | :--- |
+| Name | ASCII Art |
+| Description | Lab covering standard input and output |
+| Due Date | 9/6/24 |
+| Status | Done |
+| Location | https://github.com/rambasnet/csci000-astudent/tree/master/labs/cpp/stdio |
+| Self Grade | 100/100 |
+| Notes | fixed all the fixmes; learned about stdio; stdio is the fundamental building blocks in coding |
+>>>>>>> Stashed changes
