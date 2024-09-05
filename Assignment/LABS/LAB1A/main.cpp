@@ -51,7 +51,9 @@ int main()
     //FIXED: declare a variable to store programmer's name
     string Name; 
     cout << "First & Last Name: ";
-    cin  >> Name;
+    cin.ignore(1000, '\n');
+    getline(cin, Name);
+   
     //FIXED: prompt to enter programer's name and store the entered data into the declared variable
 
     //FIXED: prompt user to enter course name (e.g., CSCI 111) and store the data into a declared variable
@@ -67,6 +69,11 @@ int main()
     const string jerry1 = "(\\_/)";
     const string tom2 = "/  @  @ \\";
     const string jerry2 = "(='.'=)";
+    const string tom3 = "( >   0  <   )";
+    const string jerry3 = "( ' )_( ' )";
+    const string tom4 = ">>x<<";
+    const string tom5 = " /   O  \\ ";
+
     string asterics = string(middleWidth, '*'); // create a string with 50 asterics
     
     // create the first line of the ASCII art
@@ -86,13 +93,27 @@ int main()
     cout << tomLine2 << '*' << infoLine2 <<  '*' << jerryLine2 << endl;
 
     //FIXME5: Create and print the 3rd line of the ASCII art
+    string tomLine3 = centerText(tomWidth, tom3);
+    string infoLine3 = centerText(middleWidth-2, Name);
+    string jerryLine3 = centerText(jerryWidth, jerry3);
+    cout << tomLine3 << '*' << infoLine3 << '*' << jerryLine3 << endl;
     //FIXME6: Create and print the 4th line of the ASCII art
+    string tomLine4 = centerText(tomWidth, tom4);
+    string infoLine4 = centerText(middleWidth-2, Course);
+    cout << tomLine4 << '*' << infoLine4 << '*' << endl;
+
     //FIXME7: Create and print the 5th line of the ASCII art
+    string tomLine5 = centerText(tomWidth, tom5);
+    string infoLine5 = centerText(middleWidth-2, asterics);
+    cout << tomLine5 << infoLine5 << endl;
 
     //Note: You can add more lines or print more ASCII arts of your choice ... if you'd like to...
 
-    cout << "\nGood bye... hit enter to exit the program.\n";
+    cin.ignore(1000, '\n');
+    cout << "Enter to quit the program: ";
+    cin.get();
+    cout << "Good bye..." << endl;
     //FIXME8: make the console wait for user input
-
+   
     return 0; //exit program by returning 0 status to the system
 }
