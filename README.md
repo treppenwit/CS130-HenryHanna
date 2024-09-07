@@ -2,8 +2,13 @@
 # CS130-HenryHanna
 
 # The-Pickle-Barrel
+<<<<<<< HEAD
 
 
+=======
+| Name | Value |
+| :--- | :--- |
+>>>>>>> 9dd45b75783c468878d82a93d80a545440abcfab
 | **Course** | CSCI130 |
 | **Section** | 2 |
 | **Semester** | Fall 2024 |
@@ -15,7 +20,8 @@
 ## Assignments
 
 ### Assignment #1
-
+| Name | Value |
+| :--- | :--- |
 | Name | Hello World |
 | Description | A basic hello world program |
 | Due Date | N/A |
@@ -32,16 +38,21 @@
 ## Labs
 
 ### Lab #1
-
+| Name | Value |
+| :--- | :--- |
 | Name | ASCII Art |
 | Description | Lab covering standard input and output |
 | Due Date | 9/6/24 |
 | Status | Done |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/LABS/LAB1A/main.cpp |
 =======
 | Location |  |
 >>>>>>> d8eff1bebf84aed4e0f7aafb2ad3b7c898f4406a
+=======
+| Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/LABS/LAB1A/main.cpp |
+>>>>>>> 9dd45b75783c468878d82a93d80a545440abcfab
 | Self Grade | 100/100 |
 | Notes | fixed all the fixmes; learned about stdio; stdio is the fundamental building blocks in coding |
 
