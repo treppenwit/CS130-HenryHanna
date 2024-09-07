@@ -3,7 +3,7 @@
 
 # The-Pickle-Barrel
 
-
+|:---|:---|
 | **Course** | CSCI130 |
 | **Section** | 2 |
 | **Semester** | Fall 2024 |
