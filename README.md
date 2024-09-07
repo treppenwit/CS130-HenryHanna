@@ -4,7 +4,6 @@
 # The-Pickle-Barrel
 
 | Name | Henry |
-|:---|:---|
 | **Course** | CSCI130 |
 | **Section** | 2 |
 | **Semester** | Fall 2024 |
