@@ -2,7 +2,7 @@
 # CS130-HenryHanna
 
 # The-Pickle-Barrel
-
+| Name | Value |
 | :--- | :--- |
 | **Course** | CSCI130 |
 | **Section** | 2 |
