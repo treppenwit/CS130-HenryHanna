@@ -3,11 +3,7 @@
 
 # The-Pickle-Barrel
 
-<<<<<<< HEAD
-| Name | Henry |
-=======
 
->>>>>>> d8eff1bebf84aed4e0f7aafb2ad3b7c898f4406a
 | **Course** | CSCI130 |
 | **Section** | 2 |
 | **Semester** | Fall 2024 |
