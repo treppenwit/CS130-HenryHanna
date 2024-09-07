@@ -23,7 +23,7 @@ string centerText(int width, const string& str) {
 int main ()
 {
     const int hmWidth = 100;
-    string divider = string(hmWidth*2, '_');
+    string divider = string(hmWidth, '_');
     cout << centerText(100, "Welcome to Hangman!") << endl;
 
     string Name;
