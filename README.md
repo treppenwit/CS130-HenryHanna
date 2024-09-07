@@ -29,7 +29,8 @@
 ## Labs
 
 ### Lab #1
-
+| Name | Value |
+| :--- | :--- |
 | Name | ASCII Art |
 | Description | Lab covering standard input and output |
 | Due Date | 9/6/24 |
@@ -37,4 +38,4 @@
 | Location |  |
 | Self Grade | 100/100 |
 | Notes | fixed all the fixmes; learned about stdio; stdio is the fundamental building blocks in coding |
->>>>>>> Stashed changes
+
