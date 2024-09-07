@@ -35,7 +35,7 @@
 | Description | Lab covering standard input and output |
 | Due Date | 9/6/24 |
 | Status | Done |
-| Location |  |
+| Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/LABS/LAB1A/main.cpp |
 | Self Grade | 100/100 |
 | Notes | fixed all the fixmes; learned about stdio; stdio is the fundamental building blocks in coding |
 
