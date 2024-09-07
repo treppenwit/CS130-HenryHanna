@@ -23,7 +23,7 @@ string centerText(int width, const string& str) {
 int main ()
 {
     const int hmWidth = 100;
-
+    string divider = string(hmWidth*2, '_');
     cout << centerText(100, "Welcome to Hangman!") << endl;
 
     string Name;
@@ -33,15 +33,24 @@ int main ()
     cout << "Hello " << Name << ", any last words?" << endl;
 
     const string hmLength1 = "    |-----------------";
-    const string hmLength2 = "    |/";
-    const string hmLength3 = "    |";
-    const string hmLength4 = " ";
-    const string hmLength5 = "";
+    const string hmLength2 = "    |/        |       ";
+    const string Stickman1 = "    |         O       ";
+    const string Stickman2 = "    |         |       ";
+    const string Stickman3 = "    |        /|       ";
+    const string Stickman4 = "    |        /|\\     ";
+    const string Stickman5 = "    |        /        ";
+    const string Stickman6 = "    |        / \\     ";
+    const string hmLength3 = "    |                 ";
+    const string hmLength4 = "===========           ";
 
 
     string hm1 = centerText(hmWidth, hmLength1);
-    string hm2 = centerText(hmWidth-15, hmLength2);
-    string hm3 = centerText(hmWidth-16, hmLength3);
+    string hm2 = centerText(hmWidth, hmLength2);
+    string hm3 = centerText(hmWidth, hmLength3);
+    string hm4 = centerText(hmWidth, hmLength4);
+    string hmhead = centerText(hmWidth, Stickman1);
+
+    cout << centerText(hmWidth, "Stage One:") << endl;
     cout << hm1 << endl;
     cout << hm2 << endl;
     cout << hm3 << endl;
@@ -51,7 +60,7 @@ int main ()
     cout << hm3 << endl;
     cout << hm3 << endl;
     cout << hm3 << endl;
-
-
+    cout << hm4 << endl;
+    cout << divider << endl;
     return 0;
 }
