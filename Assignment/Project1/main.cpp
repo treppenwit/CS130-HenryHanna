@@ -13,11 +13,13 @@ int main ()
 
     cout << "How would you like units displayed? (feet or meters)" << endl;
     cin >> units;
-    if (units = "feet"){
+    if (units == "feet"){
         cout << "You have entered feet" << endl;
-        if (units = "meters")
-        cout << "You have entered meters" << endl;
     }
-
+    if (units == "meters"){
+        cout << "You have entered meters" << endl;
+        }else{
+        cout << "Enter again" << endl;
+    }
     return 0;
 }
