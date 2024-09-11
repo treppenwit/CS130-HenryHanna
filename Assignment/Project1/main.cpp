@@ -18,8 +18,6 @@ int main ()
     }
     if (units == "meters"){
         cout << "You have entered meters" << endl;
-        }else{
-        cout << "Enter again" << endl;
-    }
+        }
     return 0;
 }
