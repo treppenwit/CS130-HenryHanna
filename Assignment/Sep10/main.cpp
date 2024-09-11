@@ -5,6 +5,11 @@
 #include <cstdio>
 
 using namespace std;
+
+void juice(){
+    cout << "Juice" << endl;
+}
+
 int main()
 {
     srand(time(NULL));
@@ -18,6 +23,7 @@ int main()
 
     printf("Printing characters:\tc %c\n", 65);
     printf("Column Width & Right Justification: %10s\n", "Hi");
+    juice();
 
     return 0;
 }
