@@ -46,6 +46,16 @@
 | Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/Assignment/MATH/Triangle/main.cpp |
 | Self Grade | 100/100 |
 | Notes | That was sort of fun |
+### Assignment #4
+| Name | Value |
+| :--- | :--- |
+| Name | Kattis R2 |
+| Description | Given two values, find one that consists a mean from one of the original values |
+| Due Date | 09/09/24 |
+| Status | Done |
+| Location | https://github.com/treppenwit/CS130-HenryHanna/tree/main/Assignment/MATH/Triangle/R2 |
+| Self Grade | 100/100 |
+| Notes | Yay kattis |
 ## Labs
 
 ### Lab #1
