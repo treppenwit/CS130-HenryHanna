@@ -10,23 +10,27 @@ Read and solve Triangle Area problem: https://open.kattis.com/problems/triarea
 
 #include <iostream>
 #include <cstdio>
-#include <cmath>
+#include <math.h>
 #include <string>
 using namespace std;
 
 int main()
 {
-    //Ask for lengths of sides of a triangle and provide them.
-    int side1;
-    int side2;
-    int side3;
-    char ch;
-    cout << "Enter sides of triangle in a comm-separated list:" << endl;
-    cin >> side1 >> ch >> side2 >> ch >> side3; 
-    cout << "a = " << side1 << ", b = " << side2 << " , and c = " << side3 << '.' << endl;
-    double periHalf = (side1 + side2 + side3)/2;
-    float int areaT = sqrt(periHalf*(periHalf-side1)*(periHalf-side2)*(periHalf-side3));
-    cout >> areaT >> endl;
+    //declare variables for each side and area
+    float side1, side2, side3, area, s;
+    //inputs for each side
+    cout << "The length of side 1 is: ";
+    cin >> side1; 
+    cout << "The length of side 2 is: ";
+    cin >> side2; 
+    cout << "The length of side 3 is: ";
+    cin >> side3; 
+    //set definitions for area and perimeter
+    s = (side1 + side2 + side3) / 2;
+    area = sqrt(s * (s-side1) * (s-side2) * (s-side3));
+    //show the area and perimeter values
+    cout << "The perimeter of this triangle is: " << s * 2 << endl;
+    cout << "The area of this triangle is: " << area << endl;
 
 
     return 0;

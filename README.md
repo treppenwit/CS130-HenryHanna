@@ -36,6 +36,16 @@
 | Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/Assignment/stdio/hangman/main.cpp |
 | Self Grade | 100/100 |
 | Notes | Making that many strings was tedious |
+### Assignment #3
+| Name | Value |
+| :--- | :--- |
+| Name | Triangle |
+| Description | Give area and perimeter based on lengths of triangle sides |
+| Due Date | 09/09/24 |
+| Status | Done |
+| Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/Assignment/MATH/Triangle/main.cpp |
+| Self Grade | 100/100 |
+| Notes | That was sort of fun |
 ## Labs
 
 ### Lab #1
