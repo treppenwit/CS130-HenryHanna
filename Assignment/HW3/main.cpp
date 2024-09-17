@@ -14,14 +14,12 @@ using namespace std;
 template <class T1>
 T1 add2(T1 a, T1 b);
 
-int add2 (int, int);
-double add2 (double a, double b);
 
 int main(void)
 {
     int a, b, answer;
 
-    answer = add2<int>(a,b);
+    answer = add2<double>(a,b);
 
     printf("%f + %f = %f\n", a, b, answer);
 	return 0;
