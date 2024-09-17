@@ -29,8 +29,14 @@ const float epsilon = 1e-5; // 0.00001 accuracy upto 5 decimal points; error of 
 
 // Function that calculates the distance between two points
 // x1, y1 and x2, y2 and returns the calculated value
-double findDistance(int, int, int, int);
-
+double findDistance(int x1, int y1, int x2, int y2)
+{
+    // FIXME7 - Find the distance between (x1, y1) and (x2, y2)
+    double distance = sqrt(pow((x2-x1), 2) + pow((y2-y1), 2));
+    // following the algorithm in step 1
+    // return the calculated distance
+    return distance;
+}
 // test function that runs automated testing
 void unitTest();
 
@@ -71,6 +77,7 @@ int main()
         //FIXME5 - call findDistance function passing proper arguments
         findDistance(x1,y1,x2,y2);
         //FIXME6 – Using printf function display the returned distance with proper description
+        printf("distance(%f) = %.2f\n", findDistance);
 
     }
 
@@ -81,15 +88,7 @@ int main()
     return 0;
 }
 
-double findDistance(int x1, int y1, int x2, int y2)
-{
-    // FIXME7 - Find the distance between (x1, y1) and (x2, y2)
-    double distance = sqrt(pow(x2-x1, 2) + pow(y2-y1, 2));
-    // following the algorithm in step 1
-    cout << "Distance from the two points is: " << distance << endl;
-    // return the calculated distance
-    return 0.0000000;
-}
+
 
 // test function that test findDistance function with 3 test cases
 void unitTest()

@@ -75,8 +75,18 @@
 | Description | Learning mathematical functions |
 | Due Date | 9/12/24 |
 | Status | Done |
-| Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/LABS/LAB1A/main.cpp |
+| Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/LABS/LAB2A/main.cpp |
 | Self Grade | 100/100 |
 | Notes | learned print functions and how to calculate |
+### Lab #3
+| Name | Value |
+| :--- | :--- |
+| Name | Points |
+| Description | Give distance between two points in 2D space |
+| Due Date | 9/19/24 |
+| Status |  |
+| Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/LABS/LAB3A/main.cpp |
+| Self Grade | 100/100 |
+| Notes | test functions sad |
 
 
