@@ -14,7 +14,7 @@ CXX = g++
 CXXFLAGS = -c -g -Wall -std=c++17
 
 # the build target executable file; .exe is not required
-PROGRAM = ex.out
+PROGRAM = ex.exe
 
 # list all .cpp files separated by space
 CPPFILES = main.cpp
