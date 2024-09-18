@@ -17,10 +17,11 @@ T1 add2(T1 a, T1 b);
 
 int main(void)
 {
-    int a, b, answer;
+    double a, b, answer;
 
     answer = add2<double>(a,b);
-
+    cout << "Enter two numbers seperated by a space: \n";
+    cin >> a >> b;
     printf("%f + %f = %f\n", a, b, answer);
 	return 0;
 }
@@ -32,5 +33,5 @@ T1 add2(T1 a, T1 b)
 }
 int add2 (int, int)
 {
-    return 
+    return 0;
 }
