@@ -84,9 +84,9 @@
 | Name | Points |
 | Description | Give distance between two points in 2D space |
 | Due Date | 9/19/24 |
-| Status |  |
+| Status | DONE |
 | Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/LABS/LAB3A/main.cpp |
 | Self Grade | 100/100 |
-| Notes | test functions sad |
+| Notes | test functions sad #update: nevermind|
 
 
