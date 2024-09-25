@@ -97,7 +97,7 @@
 | Description | Projectile motion|
 | Due Date | 9/23/24 |
 | Status | DONE |
-| Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/LABS/LAB3A/main.cpp |
+| Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/Assignment/Project1/main.cpp |
 | Self Grade | 100/100 |
-| Notes | test functions sad #update: nevermind|
+| Notes | This is getting nuts |
 
