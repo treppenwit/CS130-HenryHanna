@@ -88,5 +88,16 @@
 | Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/LABS/LAB3A/main.cpp |
 | Self Grade | 100/100 |
 | Notes | test functions sad #update: nevermind|
+## Projects
 
+### Project #1
+| Name | Value |
+| :--- | :--- |
+| Name | Project 1 |
+| Description | Projectile motion|
+| Due Date | 9/23/24 |
+| Status | DONE |
+| Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/LABS/LAB3A/main.cpp |
+| Self Grade | 100/100 |
+| Notes | test functions sad #update: nevermind|
 

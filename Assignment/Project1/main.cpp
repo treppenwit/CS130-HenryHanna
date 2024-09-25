@@ -18,18 +18,23 @@ float convertFeet(float entry)
     return result;
 }
 
-float convertFeetBack(float entry)
-{
-    float result = entry * 3.281;
-    return result;
-}
-
 float flightTime(double velocity, double angle, float gravity)
 {
-    result = (2 * velocity * sin(angle)) / gravity;
+    float result = (2 * velocity * sin(angle)) / gravity;
     return result;
 }
 
+float maxHeight(double velocity, double angle, float gravity)
+{
+    float result = ((pow(velocity, 2)) * ((pow(sin(angle), 2)) / (2 * gravity)));
+    return result;
+}
+
+float actualDistance(double velocity, double angle, float gravity)
+{
+    float result = (pow(velocity, 2)) * ((sin(2 * angle))/gravity);
+    return result;
+}
 
 int main ()
 {
@@ -37,50 +42,43 @@ int main ()
 
     string units;
     float entry, feet, meters;
-    double angle, velocity, targetDistance, time;
-
+    double angle, velocity, targetDistance, time, height, distance;
+    const double angle_degree = (2 * M_PI) / (angle / 360);
     const float gravity = 9.80665;
-
-    const string bow1 = "                                                      |";
-    const string bow2 = "                                                        \."
-
-
-
-
-
-
 
 
     cout << "This program calculates a projectile's flight time, maximum height, and distance from the following variables:" << endl;
-    cout << "Angle 90.0 or less: ";
-    cin >> angle;
-    cout << "Velocity (units in next question): ";
-    cin >> velocity;
     cout << "How would you like units displayed? (feet or meters): ";
     cin >> units;
     if (units == "feet"){
         cout << "You have entered feet." << endl;
-        feet = convertFeet(entry);
-        meters = convertFeetBack(feet);
+        const float gravity = 9.80665 * 3.281;
     }
     if (units == "meters"){
         cout << "You have entered meters." << endl;
         }
-    cout << "How far is your target? ";
+    
+    cout << "Angle 90.0 or less: ";
+    cin >> angle;
+    cout << "Velocity: ";
+    cin >> velocity;
+    cout << "Target distance: ";
     cin >> targetDistance;
+
+    flightTime(velocity, angle_degree, gravity);
+    time = flightTime(velocity, angle_degree, gravity);
+    printf("Flight time of projectile: %.2f seconds\n", time);
     
-    cout << bow1 << endl;
-    cout << bow2 << endl;
+    maxHeight(velocity, angle_degree, gravity);
+    height = maxHeight(velocity, angle_degree, gravity);
+    printf("Maximum height of projectile: %.2f "units"\n", height);
+
+    actualDistance(velocity, angle_degree, gravity);
+    distance = actualDistance(velocity, angle_degree, gravity);
+    printf("Distance of projectile: %.1f "units"\n", distance);
     
-    
-    
-    
-    
-    
-    
-    
-    printf("Flight time of projectile: %f\n", time);
-    
+
+
 
 
 
