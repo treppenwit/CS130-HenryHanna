@@ -98,6 +98,16 @@
 | Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/LABS/LAB3A/main.cpp |
 | Self Grade | 100/100 |
 | Notes | test functions sad #update: nevermind|
+### Lab #4
+| Name | Value |
+| :--- | :--- |
+| Name | Menu Conditionals|
+| Description | Menu for operations |
+| Due Date | 10/3/24 |
+| Status | DONE |
+| Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/LABS/LAB4A/main.cpp |
+| Self Grade | 100/100 |
+| Notes | Simple little program|
 ## Projects
 
 ### Project #1
