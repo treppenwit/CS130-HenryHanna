@@ -122,8 +122,7 @@ void findAverage(const double &n1, const double &n2, double &avg) {
     // Note: this void function doesn't return a value but
     // the average will be stored in avg
     findSum(n1, n2);
-    double result
-    result = 
+    avg = (findSum(n1, n2) / 2);
 }   
 
 double findLarger(const double &n1, const double &n2) {
@@ -134,7 +133,8 @@ double findLarger(const double &n1, const double &n2) {
 
 double findSmaller(const double &n1, const double &n2) {
     //FIXME7 - find the smaller of n1 and n2 and return it
-    return 0;
+    double smaller = (n1 <= n2) ? n1 : n2;
+    return smaller;
 }
 
 double findQuotient(const double &n1, const double &n2) {
@@ -190,15 +190,28 @@ bool program() {
         case 2:
         {
             //FIXME10: call getTwoNumbers function
+            getTwoNumbers(num1, num2);
             //FIXME11: call findDifference function and print the result
+            double difference = findDifference(num1, num2);
+            printf("%.2f - %.2f = %.2f\n", num1, num2, difference);
             break;
         }
         case 3:
         {
             //FIXME12: get two numbers and find their product using functions
+            getTwoNumbers(num1, num2);
+            double product = findProduct(num1, num2);
+            printf("%.2f * %.2f = %.2f\n", num1, num2, product);
             break;
         }
         // FIXME13: complete the rest of the cases 4, 6, and 7
+        case 4:
+        {
+            getTwoNumbers(num1, num2);
+            double quotient = findQuotient(num1, num2);
+            printf("%.2f / %.2f = %.2f\n", num1, num2, quotient);
+            break;
+        }
         case 5:
         {
             // get two numbers
@@ -207,6 +220,13 @@ bool program() {
             double max = findLarger(num1, num2);
             // print the result
             printf("larger between %.2f & %.2f is %.2f\n", num1, num2, max);
+            break;
+        }
+        case 6:
+        {
+            getTwoNumbers(num1, num2);
+            double min = findSmaller(num1, num2);
+            printf("smaller between %.2f & %.2f is %.2f\n", num1, num2, min);
             break;
         }
         case 8:
