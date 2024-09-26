@@ -56,6 +56,16 @@
 | Location | https://github.com/treppenwit/CS130-HenryHanna/tree/main/Assignment/MATH/Triangle/R2 |
 | Self Grade | 100/100 |
 | Notes | Yay kattis |
+### Assignment #5
+| Name | Value |
+| :--- | :--- |
+| Name | Calculator |
+| Description | Given two values, calculate with different operations |
+| Due Date | 09/23/24 |
+| Status | Done |
+| Location | https://github.com/treppenwit/CS130-HenryHanna/tree/main/Assignment/HW3/main.cpp |
+| Self Grade | 100/100 |
+| Notes | Modulus was difficult |
 ## Labs
 
 ### Lab #1

@@ -76,19 +76,6 @@ int main ()
     actualDistance(velocity, angle_degree, gravity);
     distance = actualDistance(velocity, angle_degree, gravity);
     printf("Distance of projectile: %.1f "units"\n", distance);
-    
 
-
-
-
-
-
-
-
-
-
-
-
-    
     return 0;
 }
