@@ -116,14 +116,6 @@ double findProduct(const double &n1, const double &n2) {
     return (n1*n2);
 }
 
-void findAverage(const double &n1, const double &n2, double &avg) {
-    //FIXME5 - find the average of n1 and n2 and update avg
-    //FIXME6 - Must call findSum function to find the sum of n1 and n2
-    // Note: this void function doesn't return a value but
-    // the average will be stored in avg
-    findSum(n1, n2);
-    avg = (findSum(n1, n2) / 2);
-}   
 
 double findLarger(const double &n1, const double &n2) {
     //find the larger of n1 and n2 and return it
@@ -227,6 +219,13 @@ bool program() {
             getTwoNumbers(num1, num2);
             double min = findSmaller(num1, num2);
             printf("smaller between %.2f & %.2f is %.2f\n", num1, num2, min);
+            break;
+        }
+        case 7:
+        {
+            getTwoNumbers(num1, num2);
+            double avg = findSum(num1, num2) / 2;
+            printf("average between %.2f & %.2f is %.2f\n", num1, num2, avg);
             break;
         }
         case 8:
