@@ -31,11 +31,6 @@ T divide(T a, T b) {
     return a / b;
 }
 
-int modulus (int a, int b)
-{
-    int result = a % b;
-    return result;
-}
 
 template <typename T>
 T power(T base, T exponent) {
@@ -74,11 +69,11 @@ void test_functions()
     cout << "Divide (5.5, 2): " << divide(5.5, 2.0) << endl; // 2.75
 
     // Test modulus
-    cout << "Modulus (5, 3): " << modulus(5, 3) << endl; // 2
+    cout << "Remainder (5, 3): " << remainder(5, 3) << endl; // 2
 
     // Test power
     cout << "Power (2, 3): " << power(2, 3) << endl; // 8
-    cout << "Power (2.5, 2): " << power(2.5, 2) << endl; // 6.25
+    cout << "Power (2.5, 2): " << power(2.5, 2.0) << endl; // 6.25
 
     // Test square root
     cout << "Square root (9): " << square_root(9) << endl; // 3
@@ -100,7 +95,7 @@ int main()
     cout << "Subtraction: " << subtract(num1, num2) << endl;
     cout << "Multiplication: " << multiply(num1, num2) << endl;
     cout << "Division: " << divide(num1, num2) << endl;
-    cout << "Modulus: " << modulus(static_cast<int>(num1), static_cast<int>(num2)) << endl; // Cast for modulus
+    cout << "Remainder: " << remainder(static_cast<int>(num1), static_cast<int>(num2)) << endl; 
     cout << "Power: " << power(num1, num2) << endl;
     cout << "Square Root of first number: " << square_root(num1) << endl;
     cout << "Larger of two numbers: " << larger(num1, num2) << endl;

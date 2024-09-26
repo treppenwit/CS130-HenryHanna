@@ -65,7 +65,7 @@
 | Status | Done |
 | Location | https://github.com/treppenwit/CS130-HenryHanna/tree/main/Assignment/HW3/main.cpp |
 | Self Grade | 100/100 |
-| Notes | Modulus was difficult |
+| Notes | Remainder was difficult |
 ## Labs
 
 ### Lab #1
