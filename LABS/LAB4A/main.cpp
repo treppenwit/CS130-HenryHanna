@@ -37,9 +37,6 @@ double findProduct(const double &, const double &);
 // function takes two numbers; finds; returns the quotient of first divided by the second
 double findQuotient(const double &, const double &);
  
-// function takes two numbers; finds and returns the average of the two
-void findAverage(const double &, const double &, double &);
- 
 // function takes two numbers; finds and returns the larger of the two
 double findLarger(const double &, const double &);
  
@@ -131,19 +128,34 @@ double findSmaller(const double &n1, const double &n2) {
 
 double findQuotient(const double &n1, const double &n2) {
     //FIXME8 - divide n1 by n2 and return the quotient
-    return 0;
+    return (n1 / n2);
 }
 
 // functions to run automated testing for various user-defined functions
 void test() {
     double answer = findSum(10, 12.5);
-    double expected = 22.5;
+    double expected = 22.5, expected1 = 3;
     assert(answer == expected); // test case 1
     assert(findSum(-5, 10.5) == 5.5); // test case 2
 
     // FIXME9 – Using assert function write at least 2 test cases for each of the following functions
     // findDifference(), findProduct(), findLarger(),
     // findSmaller(), findQuotient(), findAverage()
+    assert(findDifference(9, 3) == 6);
+    assert(findDifference(-27, 0.5) == -27.5);
+
+    assert(findProduct(7, 2) == 14);
+    assert(findProduct(8, 2.5) == 20);
+
+    assert(findLarger(-9, 2) == 2);
+    assert(findLarger(99, 99.1) == 99.1);
+
+    assert(findSmaller(0, -2) == -2);
+    assert(findSmaller(27, 26.5) == 26.5);
+
+    assert(findQuotient(9, 3) == 3);
+    assert(findQuotient(81, -9) == -9);
+
     printf("%s\n", "all test cases passed...");
 }
 
@@ -153,6 +165,7 @@ bool program() {
     int option = 1; // variable to store user entered option
     double num1=0, num2=0; // variables to store two numbers entered by user
     // display menu options
+    test();
     printMenu();
     // Input validation
     do {
