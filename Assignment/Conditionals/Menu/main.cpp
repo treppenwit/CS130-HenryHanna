@@ -115,8 +115,6 @@ int getMenuOption() {
 
 bool program() {
     string name;
-    cout << "Enter your name: ";
-    cin >> name;
     float n1, n2, n3, n4, n5;
     int option;
     option = getMenuOption();
@@ -125,22 +123,33 @@ bool program() {
     cin >> n1 >> n2 >> n3 >> n4 >> n5;
     switch(option) {
         case 1:
+        {
             cout << "The largest number of " << n1 << ", " << n2 << ", " << n3 << ", " << n4 << ", and " << n5 << " is " << larger<float>(n1, n2, n3, n4, n5) << endl;
             break; // terminate switch
+        }
         case 2:
+        {
             cout << "The smallest number of " << n1 << ", " << n2 << ", " << n3 << ", " << n4 << ", and " << n5 << " is " << smaller<float>(n1, n2, n3, n4, n5) << endl;
             break;
+        }
         case 3:
+        {
             cout << "The sum of " << n1 << ", " << n2 << ", " << n3 << ", " << n4 << ", and " << n5 << " is " << sum5<float>(n1, n2, n3, n4, n5) << endl;
             break;
+        }
         case 4:
-        default:
+        {
+        
             return false;
         }
-        return true;
+    }
+    return true;
 }
 
 int main(int argc, char* argv[]) {
+    string name;
+    cout << "Enter your name: ";
+    cin >> name;
     if(argc == 2 && string(argv[1]) == "test") {
         test();
         exit(EXIT_SUCCESS); // exit the program

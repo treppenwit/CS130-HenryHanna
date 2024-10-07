@@ -66,6 +66,16 @@
 | Location | https://github.com/treppenwit/CS130-HenryHanna/tree/main/Assignment/HW3/main.cpp |
 | Self Grade | 100/100 |
 | Notes | Remainder was difficult |
+### Assignment #6
+| Name | Value |
+| :--- | :--- |
+| Name | Contitionals |
+| Description | Print menu and execute funtions |
+| Due Date | 10/07/24 |
+| Status | Done |
+| Location | https://github.com/treppenwit/CS130-HenryHanna/tree/main/Assignment/Conditionals/Menu/main.cpp |
+| Self Grade | 100/100 |
+| Notes | Menu |
 ## Labs
 
 ### Lab #1
