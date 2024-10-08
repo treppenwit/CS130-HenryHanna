@@ -76,6 +76,16 @@
 | Location | https://github.com/treppenwit/CS130-HenryHanna/tree/main/Assignment/Conditionals/Menu/main.cpp |
 | Self Grade | 100/100 |
 | Notes | Menu |
+### Assignment #7
+| Name | Value |
+| :--- | :--- |
+| Name | Sort Two Numbers |
+| Description | Sort two numbers |
+| Due Date | 10/07/24 |
+| Status | Done |
+| Location | https://github.com/treppenwit/CS130-HenryHanna/tree/main/Assignment/Conditionals/Menu/kattis.cpp |
+| Self Grade | 100/100 |
+| Notes | Menu |
 ## Labs
 
 ### Lab #1
