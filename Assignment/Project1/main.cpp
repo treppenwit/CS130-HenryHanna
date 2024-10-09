@@ -43,7 +43,7 @@ int main ()
     string units;
     float entry, feet, meters;
     double angle, velocity, targetDistance, time, height, distance;
-    const double angle_degree = (2 * M_PI) / (angle / 360);
+    const double angle_degree = (angle * M_PI) / (180);
     const float gravity = 9.80665;
 
 
