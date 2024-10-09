@@ -43,7 +43,7 @@ int main ()
     string units;
     float entry, feet, meters;
     double angle, velocity, targetDistance, time, height, distance;
-    const double angle_degree = (angle * M_PI) / (180);
+    const double angle_rad = (angle * M_PI) / (180);
     const float gravity = 9.80665;
 
 
@@ -65,16 +65,16 @@ int main ()
     cout << "Target distance: ";
     cin >> targetDistance;
 
-    flightTime(velocity, angle_degree, gravity);
-    time = flightTime(velocity, angle_degree, gravity);
+    flightTime(velocity, angle_rad, gravity);
+    time = flightTime(velocity, angle_rad, gravity);
     printf("Flight time of projectile: %.2f seconds\n", time);
     
-    maxHeight(velocity, angle_degree, gravity);
-    height = maxHeight(velocity, angle_degree, gravity);
+    maxHeight(velocity, angle_rad, gravity);
+    height = maxHeight(velocity, angle_rad, gravity);
     printf("Maximum height of projectile: %.2f "units"\n", height);
 
-    actualDistance(velocity, angle_degree, gravity);
-    distance = actualDistance(velocity, angle_degree, gravity);
+    actualDistance(velocity, angle_rad, gravity);
+    distance = actualDistance(velocity, angle_rad, gravity);
     printf("Distance of projectile: %.1f "units"\n", distance);
 
     return 0;
