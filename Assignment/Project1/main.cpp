@@ -44,7 +44,7 @@ int main ()
     float entry, feet, meters;
     double angle, velocity, targetDistance, time, height, distance;
     const double angle_rad = (angle * M_PI) / (180);
-    const float gravity = 9.80665;
+    
 
 
     cout << "This program calculates a projectile's flight time, maximum height, and distance from the following variables:" << endl;
@@ -56,6 +56,7 @@ int main ()
     }
     if (units == "meters"){
         cout << "You have entered meters." << endl;
+        const float gravity = 9.80665;
         }
     
     cout << "Angle 90.0 or less: ";
