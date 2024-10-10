@@ -134,7 +134,7 @@
 | Name | Print Triangle|
 | Description | print triangles |
 | Due Date | 10/10/24 |
-| Status |  |
+| Status | DONE |
 | Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/LABS/LAB5A/main.cpp |
 | Self Grade | 100/100 |
 | Notes | Yummy triangle in my tummy!|

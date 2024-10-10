@@ -68,6 +68,16 @@ Square of height 5, e.g., would look like the following.
 
 */
 
+void printSquare(int height) {
+
+    for(int row = 0; row < height ; row++){
+        for(int col = 0; col < height ; col++){
+            cout << "*  ";
+        }
+        cout << endl;
+    }
+}
+
 // function clears the screen system call
 // NOTE: system call is not a security best pracice!
 void clearScreen() {
@@ -80,28 +90,32 @@ void clearScreen() {
 }
 
 int main(int argc, char* argv[]) {
-    // FIXME5 add a loop to make the program to continue to run until the user wants to quit
-    // FIXME6 call clearScreen function to clear the screen for each round of the loop
+        // FIXME5 add a loop to make the program to continue to run until the user wants to quit
+        // FIXME6 call clearScreen function to clear the screen for each round of the loop
     int height;
-    cout << "Program prints geometric shapes of given height with *\n";
-    cout << "Please enter the height of the shape: ";
-    cin >> height;
-    // call printTriangle function passing user entered height
-    printTriangle(height);
-    
-    // FIXME7
-    // Call printFlippedTriangle passing proper argument
-    // Manually test the function
-    printFlippedTriangle(height);
-    // FIXME6
-    // Call the function defined in FIXME4 passing proper argument
-    // Manually test the function
-
-    // FIXME9
-    // prompt user to enter y/Y to continue anything else to quit
-
-    // FIXME10
-    // Use conditional statements to break the loop or continue the loop
-
+    char ans;
+    do {
+        clearScreen();
+        cout << "Program prints geometric shapes of given height with *\n";
+        cout << "Please enter the height of the shape: ";
+        cin >> height;
+        // call printTriangle function passing user entered height
+        printTriangle(height);
+        
+        // FIXME7
+        // Call printFlippedTriangle passing proper argument
+        // Manually test the function
+        printFlippedTriangle(height);
+        // FIXME6
+        // Call the function defined in FIXME4 passing proper argument
+        // Manually test the function
+        printSquare(height);
+        // FIXME9
+        // prompt user to enter y/Y to continue anything else to quit
+        cout << "Press y to restart: " << endl;
+        cin >> ans;
+        // FIXME10
+        // Use conditional statements to break the loop or continue the loop
+} while (ans == 'y' || ans == 'Y');
     return 0;
 }
