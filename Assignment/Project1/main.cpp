@@ -18,23 +18,6 @@ float convertFeet(float entry)
     return result;
 }
 
-float flightTime(double velocity, double angle, float gravity)
-{
-    float result = (2 * velocity * sin(angle)) / gravity;
-    return result;
-}
-
-float maxHeight(double velocity, double angle, float gravity)
-{
-    float result = ((pow(velocity, 2)) * ((pow(sin(angle), 2)) / (2 * gravity)));
-    return result;
-}
-
-float actualDistance(double velocity, double angle, float gravity)
-{
-    float result = (pow(velocity, 2)) * ((sin(2 * angle))/gravity);
-    return result;
-}
 
 int main ()
 {
@@ -42,9 +25,9 @@ int main ()
 
     string units;
     float entry, feet, meters;
-    double angle, velocity, targetDistance, time, height, distance;
-    const double angle_rad = (angle * M_PI) / (180);
-    
+    double angle, velocity, targetDistance, flightTime, maxHeight, actualDistance;
+   
+    const double gravity = 9.80665;
 
 
     cout << "This program calculates a projectile's flight time, maximum height, and distance from the following variables:" << endl;
@@ -52,31 +35,31 @@ int main ()
     cin >> units;
     if (units == "feet"){
         cout << "You have entered feet." << endl;
-        const float gravity = 9.80665 * 3.281;
     }
-    if (units == "meters"){
+    else if (units == "meters"){
         cout << "You have entered meters." << endl;
-        const float gravity = 9.80665;
-        }
-    
+        
+    }
+    else
+    {
+        cout << "Invalid units. Re-Enter prompt."
+    }
     cout << "Angle 90.0 or less: ";
-    cin >> angle;
+    cin >> angle; 
+    const double angle_rad = angle * M_PI / 180;
     cout << "Velocity: ";
     cin >> velocity;
     cout << "Target distance: ";
     cin >> targetDistance;
 
-    flightTime(velocity, angle_rad, gravity);
-    time = flightTime(velocity, angle_rad, gravity);
-    printf("Flight time of projectile: %.2f seconds\n", time);
+    flightTime = (2 * velocity * sin(angle_rad)) / gravity;
+    printf("Flight time of projectile: %.2f seconds\n", flightTime);
     
-    maxHeight(velocity, angle_rad, gravity);
-    height = maxHeight(velocity, angle_rad, gravity);
-    printf("Maximum height of projectile: %.2f "units"\n", height);
+    maxHeight = pow(velocity, 2)*pow(sin(angle_rad), 2)/(2 * gravity);
+    printf("Maximum height of projectile: %.2f meters\n", maxHeight);
 
-    actualDistance(velocity, angle_rad, gravity);
-    distance = actualDistance(velocity, angle_rad, gravity);
-    printf("Distance of projectile: %.1f "units"\n", distance);
+    actualDistance = (pow(velocity, 2)) * ((sin(2 * angle_rad))/gravity);
+    printf("Distance of projectile: %.1f meters\n", actualDistance);
 
     return 0;
 }
