@@ -66,7 +66,13 @@ int main(int argc, char* argv[]) {
         answer = oss.str();
         break; // no need to test more holes; the first one will do!
       }
-        
+      while (dog_dist <= 2*gopher_dist) {
+        ostringstream oss;
+        oss << fixed << showpoint << setprecision(3);
+        oss << "The gopher cannot escape.";
+        answer = oss.str();
+        break; // no need to test more holes; the first one will do!
+      }
     }
     cout << answer << endl;
   }
