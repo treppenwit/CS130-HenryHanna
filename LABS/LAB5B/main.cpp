@@ -105,6 +105,24 @@ void testDistance() {
   cout << answer << " " << expected << endl;
   assert(abs(answer-expected) < TOLERANCE);
   // FIXME6: Write 3rd test case for distance function
+  x1 = 6.000f;
+  y1 = 2.000f;
+  x2 = 7.000f;
+  y2 = 4.000f;
+  answer = distance(x1, y1, x2, y2);
+  expected = 2.236067977;
+  cout << fixed << showpoint << setprecision(3) << endl;
+  cout << answer << " " << expected << endl;
+  assert(abs(answer-expected) < TOLERANCE);
   // FIXME7: Write 4th test case for distance function
+  x1 = 1.000f;
+  y1 = 5.000f;
+  x2 = 9.000f;
+  y2 = 7.000f;
+  answer = distance(x1, y1, x2, y2);
+  expected = 8.246211251;
+  cout << fixed << showpoint << setprecision(3) << endl;
+  cout << answer << " " << expected << endl;
+  assert(abs(answer-expected) < TOLERANCE);
   cerr << "All test cases passed!\n";
 }
