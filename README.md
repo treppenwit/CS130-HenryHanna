@@ -138,6 +138,16 @@
 | Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/LABS/LAB5A/main.cpp |
 | Self Grade | 100/100 |
 | Notes | Yummy triangle in my tummy!|
+### Lab #5B
+| Name | Value |
+| :--- | :--- |
+| Name | Dog & Gopher|
+| Description | distance of holes to escape |
+| Due Date | 10/10/24 |
+| Status | DONE |
+| Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/LABS/LAB5B/main.cpp |
+| Self Grade | 100/100 |
+| Notes | Gopher escape|
 ## Projects
 
 ### Project #1
