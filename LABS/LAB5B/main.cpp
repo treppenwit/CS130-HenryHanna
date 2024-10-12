@@ -53,19 +53,20 @@ int main(int argc, char* argv[]) {
     cout << "Enter dog's coordinates" << endl;
     cin >> dogX >> dogY;
     cout << "Enter coordinates of holes until program finds escape" << endl;
-    while (cin >> x >> y) { // while there's hole coordinates to read
+    if (cin >> x >> y) { // while there's hole coordinates to read
       //find gopher's distance from (x, y)
       gopher_dist = distance(gopherX, gopherY, x, y);
       // store the returned result into answer variable
       // FIXME3: find dog's distance from (x, y)
       dog_dist = distance(dogX, dogY, x, y);
-      if (dog_dist >= 2*gopher_dist) {
+      while (dog_dist >= 2*gopher_dist) {
         ostringstream oss;
         oss << fixed << showpoint << setprecision(3);
         oss << "The gopher can escape through the hole at (" << x << "," << y << ").";
         answer = oss.str();
         break; // no need to test more holes; the first one will do!
       }
+        
     }
     cout << answer << endl;
   }
