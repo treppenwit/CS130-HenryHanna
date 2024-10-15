@@ -11,79 +11,58 @@ Algorithm
 */
 #include <iostream>
 #include <cstdlib>
-#include <cstring>
+#include <ctime>
 
 using namespace std;
 
-int randNumber () {
-    int numR = rand() % 20 + 1;
-    return numR;
-
+int randNumber() {
+    return rand() % 20 + 1;
 }
 
-int readNumber () {
+int readNumber() {
     int read = 0;
     cout << "Enter a guess: ";
     cin >> read;
     return read;
 }
 
-int checkGuess (int guess, int numR) {
-    int attempt;
+int checkGuess(int guess, int numR) {
     if (guess == numR) {
-        attempt = 0;
+        return 0; // Correct
+    } else if (guess > numR) {
+        return 2; // Too high
+    } else {
+        return -1; // Too low
     }
-    if (guess > numR) {
-        attempt = 2;
-    }
-    if (guess < numR) {
-        attempt = -1;
-    }
-    return attempt;
 }
 
-int main () 
-{
-    int numR, guess, attempt;
+int main() {
+    srand(static_cast<unsigned int>(time(0))); // Seed random number generator
+    char again;
 
-    for (int x = 0; x < 1; x++){
-        for (int i = 1; i < 6; i++){
-            numR = randNumber();
+    do {
+        int numR = randNumber(); // Generate number once per round
+        int guess, attempt;
 
+        for (int i = 0; i < 5; i++) {
             guess = readNumber();
-
             attempt = checkGuess(guess, numR);
 
             if (attempt == -1) {
                 cout << "Too low.\n" << endl;
-                i++;
-            }
-            if (attempt == 2) {
+            } else if (attempt == 2) {
                 cout << "Too high.\n" << endl;
-                i++;
-            }
-            if (attempt == 0) {
-                cout << "You guessed the number.\n" << endl;
-                break;
+            } else if (attempt == 0) {
+                cout << "You guessed the number!\n" << endl;
+                break; // Exit guessing loop if guessed correctly
             }
         }
-            char again;
-            cout << "The number was " << numR << ". Would you like to try again? (y = yes, n = no)" << endl;
-            cin >> again;
-            if (again = 'y'){
-                x++;
-            } else {
-                cout << "hit enter to run again.\n";
-                cin.get();
-                getchar();
-            }
-        
-        cout << "goodbye.\n";
-        getchar();
-        cin.get();
-        return 0;
-    }
 
+        cout << "The number was " << numR << ". Would you like to try again? (y = yes, n = no)" << endl;
+        cin >> again;
 
-    return 0;
+    } while (again == 'y'); // Loop again if user wants to play
+
+    cout << "Goodbye.\n";
+    return 0; // End of main
 }
