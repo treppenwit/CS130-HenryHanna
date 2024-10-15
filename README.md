@@ -86,6 +86,16 @@
 | Location | https://github.com/treppenwit/CS130-HenryHanna/tree/main/Assignment/Conditionals/Menu/kattis.cpp |
 | Self Grade | 100/100 |
 | Notes | Menu |
+### Assignment #8
+| Name | Value |
+| :--- | :--- |
+| Name | Guess Number |
+| Description | guess number game |
+| Due Date | 10/16/24 |
+| Status | Done |
+| Location | https://github.com/treppenwit/CS130-HenryHanna/tree/main/Assignment/loops/guessNumber/main.cpp |
+| Self Grade | 100/100 |
+| Notes | loop loop loop |
 ## Labs
 
 ### Lab #1
