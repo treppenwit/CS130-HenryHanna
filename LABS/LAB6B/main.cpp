@@ -48,7 +48,7 @@ int main(int argc, char* argv[]) {
 void program() {
     size_t size;
     cout << "This program finds statistical values of some integers entered by the user.\n";
-    cout << "How many nubers would like to enter? ";
+    cout << "How many numbers would like to enter? ";
     cin >> size;
     int *nums = new int[size]; //declare a dynamic int array of size 
     int max, min;
@@ -95,6 +95,8 @@ void findMaxAndMin(int nums[], int len, int &max, int &min)
 			max = nums[i];
 
 		//FIXEME4: compare min with each element and update min
+		if (min > nums[i])
+			min = nums[i];
 	}
 }
 
@@ -110,6 +112,9 @@ void bubbleSort(int nums[], int len)
 			if (nums[j] > nums[j+1]) {
 				//FIXME5: swap the values of nums[j] and nums[j+1]
 				// can use built-in swap or implement your own swap
+				temp = nums[j];
+                nums[j] = nums[j + 1];
+                nums[j + 1] = temp;
 				sorted = false;
 			}
 		}

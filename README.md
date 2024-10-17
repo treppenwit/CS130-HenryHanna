@@ -159,6 +159,18 @@
 | Self Grade | 100/100 |
 | Notes | Gopher escape|
 ## Projects
+### Lab #6B
+| Name | Value |
+| :--- | :--- |
+| Name | Numbers Array|
+| Description | print and sort |
+| Due Date | 10/28/24 |
+| Status | DONE |
+| Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/LABS/LAB6B/main.cpp |
+| Self Grade | 100/100 |
+| Notes | Swappy-doo|
+## Projects
+
 
 ### Project #1
 | Name | Value |
