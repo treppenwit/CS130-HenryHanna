@@ -5,6 +5,8 @@
 using namespace std;
 
 // functions for the story, probably randomizers
+
+
 string centerText(int width, const string& str) {
     int len = str.length();
     if(width < len) { 
@@ -36,7 +38,16 @@ int main()
 
     if (choice1 == "yes")
     {
+        string choice2;
         cout << "You move slightly, only to realize you're stuffed in a chimney. Why on Earth are you in a chimney?" << endl;
+        cout << "The bottom of the chimney is shut. You begin to climb the charcoal covered walls. Light seeps into this squarish cavern." << endl;
+        cout << "As you reach the top of the chimney the low sun over the horizon blinds you. While climbing out you think how " << endl;
+        cout << "you will get down from this roof. Do you jump down or do you use your clothes to climb down? (type jump or climb)" << endl;
+        cin >> choice2;
+        if (choice2 == "jump")
+        {
+            cout << "idk yet";
+        }
     }
     if (choice1 == "no")
     {
