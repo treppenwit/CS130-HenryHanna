@@ -49,7 +49,7 @@ int main(int argc, char* argv[])
     initFlags(flags, 42);
     updateFlags(nums, flags, 10);
     //FIXME3 - call countFlags function passing proper argument and print the result
-    countFlags()
+    countFlags(flags, 10);
   }
 	return 0;
 }
@@ -71,7 +71,7 @@ void updateFlags(const unsigned int * numbers, bool * flags, size_t num_len) {
 
 unsigned int getModulo42(unsigned int num) {
   // FIXME4: return num modulo 42
-  return 0;
+  return num%42;
 }
 
 void initFlags(bool * flags, size_t flags_len) {
@@ -84,6 +84,10 @@ size_t countFlags(const bool flags[], size_t flags_len) {
   size_t count = 0;
   for (int i=0; i< flags_len; i++) {
     // FIXME5: if the flags at index i is set to true, increment count by 1
+    if (flags[i]){
+      count++;
+    }
+    //fixed
   }
   return count;
 }
@@ -92,6 +96,9 @@ void testGetModulo42() {
   assert(getModulo42(41) == 41);
   assert(getModulo42(42) == 0);
   assert(getModulo42(43) == 1);
+  assert(getModulo42(7) == 7);
+  assert(getModulo42(84) == 0);
+  assert(getModulo42(13) == 13);
   // FIXME6: Write 3 more test cases
   cerr << "getModulo42(): All test cases passed!" << endl;
 }

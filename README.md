@@ -158,7 +158,16 @@
 | Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/LABS/LAB5B/main.cpp |
 | Self Grade | 100/100 |
 | Notes | Gopher escape|
-## Projects
+### Lab #6A
+| Name | Value |
+| :--- | :--- |
+| Name | MODULO|
+| Description | modulo 42 |
+| Due Date | 10/28/24 |
+| Status | DONE |
+| Location | https://github.com/treppenwit/CS130-HenryHanna/blob/main/LABS/LAB6A/main.cpp |
+| Self Grade | 100/100 |
+| Notes | modulo 420 |
 ### Lab #6B
 | Name | Value |
 | :--- | :--- |
