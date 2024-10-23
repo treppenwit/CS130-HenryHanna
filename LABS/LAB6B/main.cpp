@@ -64,6 +64,7 @@ void program() {
     bubbleSort(nums, size);
     //FIXME3: print sorted array
 	printArray(nums, size);
+	//fixed
 
     delete [] nums;
 }
@@ -97,6 +98,7 @@ void findMaxAndMin(int nums[], int len, int &max, int &min)
 		//FIXEME4: compare min with each element and update min
 		if (min > nums[i])
 			min = nums[i];
+			//fixed
 	}
 }
 
@@ -116,6 +118,7 @@ void bubbleSort(int nums[], int len)
                 nums[j] = nums[j + 1];
                 nums[j + 1] = temp;
 				sorted = false;
+				//fixed
 			}
 		}
 		if (sorted) break;
@@ -126,5 +129,9 @@ big_int findSum(int nums[], int len)
 {
 	big_int sum = 0;
 	//FIXME6: iterate through nums array and add each element to sum
+	for (int i = 0; i < len; i++) {
+        sum += nums[i];
+    }
+	//fixed
 	return sum;
 }
