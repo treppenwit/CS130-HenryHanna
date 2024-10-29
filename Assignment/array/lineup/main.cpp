@@ -3,6 +3,15 @@ Programmer name: Henry Hanna
 Date: 10/27/24
 Class: CS130
 */
+/*
+        Algorithm Steps.
+        1. Input the number of people on the team. 2 <= n <= 20
+        2. Enter the names of people on one team in all caps. No spaces, only first names. Characters in the name must be 2 <= ch <= 12.
+        3. Output whether the names are listed/inputted in alphabetical order, INCREASING, reverse-alphabetical order, DECREASING, or non of the latter and the output is NEITHER.
+
+
+
+*/
 
 #include <iostream>
 #include <strings.h>
