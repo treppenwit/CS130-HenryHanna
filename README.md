@@ -96,6 +96,16 @@
 | Location | https://github.com/treppenwit/CS130-HenryHanna/tree/main/Assignment/loops/guessNumber/main.cpp |
 | Self Grade | 100/100 |
 | Notes | loop loop loop |
+### Assignment #9
+| Name | Value |
+| :--- | :--- |
+| Name | Kattis Arrays |
+| Description | lineup and falling apart |
+| Due Date | 10/16/24 |
+| Status | Done |
+| Location | https://github.com/treppenwit/CS130-HenryHanna/tree/main/Assignment/array |
+| Self Grade | 90/100 |
+| Notes | arrays and vectors |
 ## Labs
 
 ### Lab #1
