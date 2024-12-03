@@ -1,29 +1,39 @@
- compiler name
+ # Compiler settings
 CXX = g++
-# c++ compiler flags
-# -g : adds debugging information to the executable file
-# -Wall : turns on most, but not  all, compiler warnings
-# -std=C++17 : uses c++17 standard
-# put all the required flags separated by space
-CXXFLAGS = -c -g -Wall -std=c++17
+CXXFLAGS = -std=c++11 -Wall
 
-# the build target executable file; .exe is not required
-PROGRAM = library.exe
+# Source and object files
+SRCS = main.cpp  # Add any other source files here
+OBJS = $(SRCS:.cpp=.o)
 
-# list .cpp files separated by space
-CPPFILES = main.cpp
+# Output executable
+TARGET = game
 
-# make build rule/default rule that'll be run when we run "make"
-# first compile each file to object file
-# then make a single binary program
-all:
-	$(CXX) $(CXXFLAGS) $(CPPFILES)
-	$(CXX) -o $(PROGRAM) *.o
+# Default rule to build the program
+all: $(TARGET)
 
-run:
-	./$(PROGRAM)
-	
-# make clean rule
-# delete object and binary files
+# Rule to build the game executable
+$(TARGET): $(OBJS)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
+
+# Rule to compile .cpp files to .o files
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+# Rule to clean up build artifacts
 clean:
-	rm -f $(PROGRAM) *.o
+	rm -f $(OBJS) $(TARGET)
+
+# Rule to remove the executable and object files
+fclean: clean
+	rm -f $(TARGET)
+
+# Rule to rebuild the project from scratch
+re: fclean all
+
+# Rule to run the game after compilation
+run: $(TARGET)
+	./$(TARGET)
+
+# Phony targets (these are not files, but names for rules)
+.PHONY: all clean fclean re run

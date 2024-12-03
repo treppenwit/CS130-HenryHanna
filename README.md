@@ -106,6 +106,27 @@
 | Location | https://github.com/treppenwit/CS130-HenryHanna/tree/main/Assignment/array |
 | Self Grade | 90/100 |
 | Notes | arrays and vectors |
+### Assignment #10
+| Name | Value |
+| :--- | :--- |
+| Name | Matlab projectile Motion |
+| Description | motion of projectile |
+| Due Date | 10/16/24 |
+| Status | Done |
+| Location | https://github.com/treppenwit/CS130-HenryHanna/tree/main/Assignment/Matlab/hw1.m |
+| Self Grade | 100/100 |
+| Notes | projectile |
+
+### Final
+| Name | Value |
+| :--- | :--- |
+| Name | Western |
+| Description | made my own game |
+| Due Date | 12/13/24 |
+| Status | Done |
+| Location | https://github.com/treppenwit/CS130-HenryHanna/tree/main/finalproject/western.cpp |
+| Self Grade | 100/100 |
+| Notes | have fun! |
 ## Labs
 
 ### Lab #1
