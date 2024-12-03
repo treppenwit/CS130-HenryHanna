@@ -27,14 +27,14 @@ int randomEvent(int numChoices) {
 
 int playGame() {
     srand(time(0));  // Seed the random number generator
-    string name, lastName, choice;
+    string name, choice;
 
     // Display intro
     cout << centerText(100, "The wise shall inherit glory") << endl;
     cout << centerText(100, "But shame shall be the legacy of fools.") << endl;
     cout << centerText(100, "Proverbs 3:25") << endl;
     cout << "\nWho is the nobody's name? ";
-    cin >> name >> lastName;
+    cin >> name;
 
     // Start of the game
     cout << "\nYou’ve awoken in a cloud of troublesome thought. Your mind is fuzzy and dull, you don't know where you are. It's dark and cramped.\n";
